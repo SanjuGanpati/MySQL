@@ -12,7 +12,7 @@ public class TransactionDemoWithCommitAndRollback {
         Connection con = DriverManager.getConnection(url, user, password);
         Statement st = con.createStatement();
         System.out.println("Data before Transaction:");//  printAccounts(st);
-        System.out.println("-----------");
+        System.out.println("MySQL's");
         ResultSet rs= st.executeQuery("select * from account");
         while (rs.next()){
             System.out.println(rs.getString(1)+"...."+rs.getInt(2));
