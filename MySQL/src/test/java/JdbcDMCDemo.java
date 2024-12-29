@@ -18,6 +18,7 @@ public class JdbcDMCDemo {
             Statement st = con.createStatement();
             int count = st.executeUpdate(insertQuery);
             System.out.println("No of rows affected = " + count);
+             System.out.println("Going to commit again ");
         } finally {
             if (resultSet != null) {
                 resultSet.close();
