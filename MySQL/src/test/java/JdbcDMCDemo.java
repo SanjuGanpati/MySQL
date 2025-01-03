@@ -18,7 +18,7 @@ public class JdbcDMCDemo {
             Statement st = con.createStatement();
             int count = st.executeUpdate(insertQuery);
             System.out.println("No of rows affected = " + count);
-             System.out.println("Going to commit again ");
+             System.out.println("this is my rebase  ");
         } finally {
             if (resultSet != null) {
                 resultSet.close();
